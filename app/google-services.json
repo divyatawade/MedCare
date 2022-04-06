@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "626291192758",
+    "firebase_url": "https://medcare-9b8f4-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "medcare-9b8f4",
+    "storage_bucket": "medcare-9b8f4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:626291192758:android:3ca7260df70fc54a9b8717",
+        "android_client_info": {
+          "package_name": "com.example.med_care"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "626291192758-d2ljsrn2l2vucf15kscrtja99rpse8jo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFD1qXuOM_oVYbSDUoiAu-vbW4eHEw-Ic"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "626291192758-d2ljsrn2l2vucf15kscrtja99rpse8jo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".userReg">
+
+    <EditText
+        android:id="@+id/uname"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/textbg"
+        android:drawableStart="@drawable/ic_person"
+        android:drawablePadding="10dp"
+        android:hint="Name"
+        android:paddingStart="10dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/primarydark"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:ignore="MissingConstraints"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/umail"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/textbg"
+        android:drawableStart="@drawable/ic_mail"
+        android:drawablePadding="10dp"
+        android:hint="Email"
+        android:paddingStart="10dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/primarydark"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/uid"
+        app:layout_constraintStart_toStartOf="@+id/uid"
+        app:layout_constraintTop_toBottomOf="@+id/uid"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/umob"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/textbg"
+        android:drawableStart="@drawable/ic_mobile"
+        android:drawablePadding="10dp"
+        android:hint="Mobile"
+        android:paddingStart="10dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/primarydark"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/upass"
+        app:layout_constraintStart_toStartOf="@+id/upass"
+        app:layout_constraintTop_toBottomOf="@+id/upass"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/uid"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/textbg"
+        android:drawableStart="@drawable/ic_userid"
+        android:drawablePadding="10dp"
+        android:hint="User Id"
+        android:paddingStart="10dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/primarydark"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/uname"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/uname"
+        app:layout_constraintTop_toBottomOf="@+id/uname"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/upass"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/textbg"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="10dp"
+        android:hint="Password"
+        android:paddingStart="10dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/primarydark"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/umail"
+        app:layout_constraintStart_toStartOf="@+id/umail"
+        app:layout_constraintTop_toBottomOf="@+id/umail"
+        tools:ignore="MissingConstraints"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/primarydark"
+        android:text="SUBMIT"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout3"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="130dp"
+        android:text="USER REGISTRATION"
+        android:textAlignment="center"
+        android:textColor="@color/primarydark"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rdGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:textAlignment="textStart"
+        tools:ignore="MissingConstraints">
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/umob"
+        app:layout_constraintStart_toStartOf="@+id/umob"
+        app:layout_constraintTop_toBottomOf="@+id/umob"
+        android:paddingStart="10dp"
+        >
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:paddingTop="10dp"
+            android:text="Gender :"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:checked="false"
+                android:text="Male"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:text="Female"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+        </RadioGroup>
+        >
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

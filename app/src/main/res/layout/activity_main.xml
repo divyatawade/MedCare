@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#000000"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="false"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/adminlog"
+        android:layout_width="130dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="150dp"
+        android:backgroundTint="#FF40C4FF"
+        android:focusable="true"
+        android:fontFamily="sans-serif-black"
+        android:text="ADMIN"
+        android:textAlignment="center"
+        android:textColor="@color/primarydark"
+        android:textSize="18sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/userlog"
+        android:layout_width="130dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="50dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="false"
+        android:fontFamily="sans-serif-black"
+        android:text="USER"
+        android:textAlignment="center"
+        android:textColor="@color/primarydark"
+        android:textSize="18sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adminlog" />
+
+    <Button
+        android:id="@+id/doclog"
+        android:layout_width="130dp"
+        android:layout_height="70dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="false"
+        android:fontFamily="sans-serif-black"
+        android:text="DOCTOR"
+        android:textAlignment="center"
+        android:textColor="@color/primarydark"
+        android:textSize="18sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/userlog"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adminlog" />
+
+    <Button
+        android:id="@+id/drivlog"
+        android:layout_width="130dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="50dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="false"
+        android:fontFamily="sans-serif-black"
+        android:text="DRIVER"
+        android:textAlignment="center"
+        android:textColor="@color/primarydark"
+        android:textSize="18sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/userlog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adminlog" />
+
+    <Button
+        android:id="@+id/hoslog"
+        android:layout_width="130dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="100dp"
+        android:clickable="true"
+
+        android:focusable="true"
+        android:fontFamily="sans-serif-black"
+        android:text="HOSPITAL"
+        android:textAlignment="center"
+        android:textColor="@color/primarydark"
+        android:textSize="18sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/doclog"
+        app:layout_constraintEnd_toStartOf="@+id/drivlog"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adminlog" />
+</androidx.constraintlayout.widget.ConstraintLayout>
